@@ -24,6 +24,6 @@ go build -o pokeapitui main.go
 ```
 
 Within the TUI:
-- Arrow keys to navigate.
+- Arrow keys to navigate or Vim, btw.
 - Enter to select a Pokémon and view details.
 - Press `q` to quit.
