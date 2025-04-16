@@ -136,19 +136,20 @@ func main() {
    app := tview.NewApplication()
 
    // Tree view for Pokémon list.
-   tree := tview.NewTreeView().
-       SetBorder(true).
-       SetTitle("Pokémons")
+   tree := tview.NewTreeView()
+   tree.SetBorder(true)
+   tree.SetTitle("Pokémons")
    root := tview.NewTreeNode("Pokémons").SetColor(tcell.ColorGreen)
-   tree.SetRoot(root).SetCurrentNode(root)
+   tree.SetRoot(root)
+   tree.SetCurrentNode(root)
 
    // Text view for details.
-   details := tview.NewTextView().
-       SetBorder(true).
-       SetTitle("Details").
-       SetDynamicColors(true).
-       SetWrap(true).
-       SetScrollable(true)
+   details := tview.NewTextView()
+   details.SetBorder(true)
+   details.SetTitle("Details")
+   details.SetDynamicColors(true)
+   details.SetWrap(true)
+   details.SetScrollable(true)
 
    // Load list.
    nodes, err := fetchPokemonList()

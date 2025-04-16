@@ -4,7 +4,7 @@ A Go-based Text User Interface (TUI) application using the PokeAPI to display Po
 
 ## Requirements
 
-- Go 1.18+
+- Go 1.20+
 
 Install dependencies:
 ```bash
@@ -12,9 +12,15 @@ go mod tidy
 ```
 
 ## Usage
-
+To run without building:
 ```bash
 go run main.go
+```
+
+To build and run:
+```bash
+go build -o pokeapitui main.go
+./pokeapitui
 ```
 
 Within the TUI:
