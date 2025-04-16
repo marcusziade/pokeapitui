@@ -1,21 +1,20 @@
-# Poke TUI
+# Poke TUI (Go)
 
-A Text User Interface (TUI) application using the PokeAPI to display Pokémon and their attributes.
+A Go-based Text User Interface (TUI) application using the PokeAPI to display Pokémon and their attributes.
 
 ## Requirements
 
-- Python 3.7+
-- pip
+- Go 1.18+
 
 Install dependencies:
-```
-pip install -r requirements.txt
+```bash
+go mod tidy
 ```
 
 ## Usage
 
-```
-python main.py
+```bash
+go run main.go
 ```
 
 Within the TUI:

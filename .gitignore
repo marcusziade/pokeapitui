@@ -1,7 +1,16 @@
-__pycache__/
-*.pyc
+*.DS_Store
 .env
-.DS_Store
 *.log
-venv/
-env/
+
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go coverage output
+*.out
+
+# Vendor directory
+/vendor/
